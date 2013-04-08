@@ -336,7 +336,15 @@ wstring guessWord(wstring word)
 	immutable Tr startsWith[] =
 	[
 		{ "awe", "å" },
+		{ "ab", "äb" },
+		{ "ac", "äc" },
+		{ "ad", "äd" },
+		{ "ag", "äg" },
+		{ "ad", "äd" },
 		{ "an", "än" },
+		{ "ap", "äp" },
+		{ "at", "ät" },
+		{ "av", "äv" },
 		{ "x", "z" },
 	];
 	immutable Tr endsWith[] =
@@ -348,6 +356,7 @@ wstring guessWord(wstring word)
 		{ "tion", "šn" },
 		{ "tion", "šn" },
 		{ "y", "ē" },
+		{ "ge", "ž" },
 	];
 	immutable Tr contains[] =
 	[
@@ -371,9 +380,8 @@ wstring guessWord(wstring word)
 		{ "igh", "ī" },
 		{ "ought", "ååt" },
 		{ "ee", "ē" },
-		{ "oon", "üün" },
-		{ "oop", "üüp" },
 		{ "ook", "uk" },
+		{ "oo", "üü" },
 		{ "oi", "åi" },
 		{ "ain", "ān" },
 		{ "er", "ǝr" },
@@ -381,6 +389,7 @@ wstring guessWord(wstring word)
 		{ "ogy", "ojē" },
 		{ "bush", "buš" },
 		{ "cush", "kuš" },
+		{ "push", "puš" },
 		{ "ush", "aš" },
 
 		{ "cce", "ks" },
